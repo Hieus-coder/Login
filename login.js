@@ -89,6 +89,7 @@ const html = `
             if (username === "admin" && password === "password") {
                 messageElement.innerText = "Login successful!";
                 messageElement.classList.remove("error");
+                href="https://heart-bdum.onrender.com"
             } else {
                 messageElement.innerText = "Invalid username or password";
                 messageElement.classList.add("error");
