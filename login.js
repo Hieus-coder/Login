@@ -144,13 +144,14 @@ const html = `
             var messageElement = document.getElementById("message");
             // Check login credentials
             if (username === "admin" && password === "password") {
-                messageElement.innerText = "Login successful!";
+                messageElement.innerText = "";
                 messageElement.classList.remove("error");
                 window.alert("Login successful!");
    
             } else {
-                messageElement.innerText = "Invalid username or password";
+                messageElement.innerText = "";
                 messageElement.classList.add("error");
+                window.alert("Login error!");
             }
         });
     </script>
