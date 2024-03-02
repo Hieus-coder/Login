@@ -10,9 +10,8 @@ server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
 const html = `
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-
-<HTML>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +20,6 @@ const html = `
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            background-image: url('https://tecwood.com.vn/upload/images/Post/anh-cay-xanh-dep.jpg');
-            align-items: center;
         }
 
         .container {
@@ -93,7 +90,6 @@ const html = `
             if (username === "admin" && password === "password") {
                 messageElement.innerText = "Login successful!";
                 messageElement.classList.remove("error");
-                window.location.href = "https://test-zpyi.onrender.com";
             } else {
                 messageElement.innerText = "Invalid username or password";
                 messageElement.classList.add("error");
@@ -102,4 +98,5 @@ const html = `
     </script>
 </body>
 </html>
+
 `
