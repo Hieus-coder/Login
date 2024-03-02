@@ -80,22 +80,6 @@ const html = `
         <div id="message" class="error"></div>
     </div>
 
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            var messageElement = document.getElementById("message");
-            // Check login credentials
-            if (username === "admin" && password === "password") {
-                messageElement.innerText = "Login successful!";
-                messageElement.classList.remove("error");
-            } else {
-                messageElement.innerText = "Invalid username or password";
-                messageElement.classList.add("error");
-            }
-        });
-    </script>
 </body>
 </html>
 
