@@ -146,6 +146,7 @@ const html = `
             if (username === "admin" && password === "password") {
                 messageElement.innerText = "Login successful!";
                 messageElement.classList.remove("error");
+                window.alert("Login successful!");
    
             } else {
                 messageElement.innerText = "Invalid username or password";
