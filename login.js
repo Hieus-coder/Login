@@ -75,7 +75,7 @@ const html = `
         <form id="loginForm">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <button href="https://heart-bdum.onrender.com" type="submit">Login</button>
         </form>
         <div id="message" class="error"></div>
     </div>
@@ -89,7 +89,6 @@ const html = `
             if (username === "admin" && password === "password") {
                 messageElement.innerText = "Login successful!";
                 messageElement.classList.remove("error");
-                href="https://heart-bdum.onrender.com"
             } else {
                 messageElement.innerText = "Invalid username or password";
                 messageElement.classList.add("error");
