@@ -132,7 +132,7 @@ const html = `
         <form id="loginForm">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <button type="submit" class="submit">Login</button>
         </form>
         <div id="message" class="error"></div>
     </div>
