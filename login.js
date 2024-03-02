@@ -75,7 +75,7 @@ const html = `
         <form id="loginForm">
             <input type="text" id="username" placeholder="Username" required>
             <input type="password" id="password" placeholder="Password" required>
-            <button href="https://heart-bdum.onrender.com" type="submit">Login</button>
+            <a href="https://heart-bdum.onrender.com"><button type="submit">Login</button> <a/>
         </form>
         <div id="message" class="error"></div>
     </div>
