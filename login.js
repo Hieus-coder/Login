@@ -10,6 +10,7 @@ server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
 const html = `
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,11 @@ const html = `
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-image: url('https://gcs.tripi.vn/public-tripi/tripi-feed/img/474076LJT/background-bau-troi-den-xanh_035422172.jpg');
+            background-size: cover; /* hiển thị ảnh sao cho nó bao phủ toàn bộ phần nội dung */
+            background-position: center; /* căn ảnh vào giữa */
+            background-repeat: no-repeat; /* ngăn lặp lại ảnh */
+            background-attachment: fixed; /* giữ ảnh ở vị trí cố định khi cuộn */
         }
 
         .container {
@@ -131,7 +136,9 @@ const html = `
         <h2>Login-Hieus</h2>
         <form id="loginForm">
             <input type="text" id="username" placeholder="Username" required>
+            <p>* vandanghieu</p>
             <input type="password" id="password" placeholder="Password" required>
+            <p>* 22810310002</p>
             <button type="submit" class="submit">Login</button>
         </form>
         <div id="message" class="error"></div>
