@@ -143,7 +143,7 @@ const html = `
             var password = document.getElementById("password").value;
             var messageElement = document.getElementById("message");
             // Check login credentials
-            if (username === "admin" && password === "password") {
+            if (username === "vandanghieu" && password === "22810310002") {
                 messageElement.innerText = "";
                 messageElement.classList.remove("error");
                 window.alert("Login successful!");
